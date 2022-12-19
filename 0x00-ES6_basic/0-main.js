@@ -67,3 +67,21 @@ const employees = {
 const report = createReportObject(employees);
 console.log(report.allEmployees);
 console.log(report.getNumberOfDepartments(report.allEmployees));
+//Advanced Task I
+import createIteratorObject from "./100-createIteratorObject.js";
+
+import createEmployeesObject from './11-createEmployeesObject.js';
+import createReportObject from './12-createReportObject.js';
+
+const employees = {
+    ...createEmployeesObject('engineering', ['Bob', 'Jane']),
+    ...createEmployeesObject('marketing', ['Sylvie'])
+};
+
+const report = createReportObject(employees);
+
+const reportWithIterator = createIteratorObject(report);
+
+for (const item of reportWithIterator) {
+    console.log(item);
+}
