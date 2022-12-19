@@ -32,3 +32,7 @@ console.log(concatArrays(['a', 'b'], ['c', 'd'], 'Hello'));
 import getSanFranciscoDescription from './6-string-interpolation.js';
 
 console.log(getSanFranciscoDescription());
+//Task 7
+import getBudgetObject from './7-getBudgetObject.js';
+
+console.log(getBudgetObject(400, 700, 900));
