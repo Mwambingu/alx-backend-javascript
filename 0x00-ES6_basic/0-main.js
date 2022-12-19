@@ -55,3 +55,15 @@ console.log(appendToEachArrayValue(['appended', 'fixed', 'displayed'], 'correctl
 import createEmployeesObject from './11-createEmployeesObject.js';
 
 console.log(createEmployeesObject("Software", [ "Bob", "Sylvie" ]));
+//Task 12
+import createEmployeesObject from './11-createEmployeesObject.js';
+import createReportObject from './12-createReportObject.js';
+
+const employees = {
+    ...createEmployeesObject('engineering', ['Bob', 'Jane']),
+    ...createEmployeesObject('marketing', ['Sylvie'])
+};      
+
+const report = createReportObject(employees);
+console.log(report.allEmployees);
+console.log(report.getNumberOfDepartments(report.allEmployees));
