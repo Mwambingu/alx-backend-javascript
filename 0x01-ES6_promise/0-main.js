@@ -53,3 +53,8 @@ const test = async () => {
 }
 
 test();
+//Task 8
+import divideFunction from './8-try';
+
+console.log(divideFunction(10, 2));
+console.log(divideFunction(10, 0));
