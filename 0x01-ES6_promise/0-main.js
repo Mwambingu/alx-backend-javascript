@@ -17,3 +17,7 @@ handleResponseFromAPI(promise);
 import handleProfileSignup from "./3-all";
 
 handleProfileSignup();
+//Task 4
+import signUpUser from "./4-user-promise";
+
+console.log(signUpUser("Bob", "Dylan"));
