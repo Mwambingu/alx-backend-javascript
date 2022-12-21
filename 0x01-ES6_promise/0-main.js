@@ -13,3 +13,7 @@ import handleResponseFromAPI from "./2-then";
 
 const promise = Promise.resolve();
 handleResponseFromAPI(promise);
+//Task 3
+import handleProfileSignup from "./3-all";
+
+handleProfileSignup();
