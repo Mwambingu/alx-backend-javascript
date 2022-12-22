@@ -81,3 +81,12 @@ import HolbertonClass from "./8-hbtn_class.js";
 const hc = new HolbertonClass(12, "Mezzanine")
 console.log(Number(hc));
 console.log(String(hc));
+
+//Task 9
+import listOfStudents from "./9-hoisting.js";
+
+console.log(listOfStudents);
+
+const listPrinted = listOfStudents.map(
+    student => student.fullStudentDescription
+);
