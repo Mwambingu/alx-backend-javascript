@@ -44,3 +44,18 @@ import Currency from './3-currency.js';
 const p = new Pricing(100, new Currency("EUR", "Euro"))
 console.log(p);
 console.log(p.displayFullPrice());
+
+//Task 5
+import Building from './5-building.js';
+
+const b = new Building(100);
+console.log(b);
+
+class TestBuilding extends Building {}
+
+try {
+    new TestBuilding(200)
+}
+catch(err) {
+    console.log(err);
+}
