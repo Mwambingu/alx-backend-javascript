@@ -51,6 +51,15 @@ import cleanSet from "./8-clean_set.js";
 console.log(cleanSet(new Set(['bonjovi', 'bonaparte', 'bonappetit', 'banana']), 'bon'));
 console.log(cleanSet(new Set(['bonjovi', 'bonaparte', 'bonappetit', 'banana']), ''));
 // Task 9
+// import groceriesList from "./9-groceries_list.js";
+
+// console.log(groceriesList());
+// Task 10
+import updateUniqueItems from "./10-update_uniq_items.js";
 import groceriesList from "./9-groceries_list.js";
 
-console.log(groceriesList());
+const map = groceriesList();
+console.log(map);
+
+updateUniqueItems(map)
+console.log(map);
