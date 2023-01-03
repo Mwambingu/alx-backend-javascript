@@ -17,10 +17,17 @@
 
 // console.log(getStudentsByLocation(students, 'San Francisco'));
 // Task 3
+// import getListStudents from "./0-get_list_students.js";
+// import getStudentIdsSum from "./3-get_ids_sum.js";
+
+// const students = getListStudents();
+// const value = getStudentIdsSum(students);
+
+// console.log(value);
+// Task 4
 import getListStudents from "./0-get_list_students.js";
-import getStudentIdsSum from "./3-get_ids_sum.js";
+import updateStudentGradeByCity from "./4-update_grade_by_city.js";
 
-const students = getListStudents();
-const value = getStudentIdsSum(students);
+console.log(updateStudentGradeByCity(getListStudents(), "San Francisco", [{ studentId: 5, grade: 97 }, { studentId: 1, grade: 86 }]));
 
-console.log(value);
+console.log(updateStudentGradeByCity(getListStudents(), "San Francisco", [{ studentId: 5, grade: 97 }]));
