@@ -5,6 +5,7 @@
 *   firstName: String,
 *   location: String
 * }[]} students - The list of students.
+* @author Tonny Mwambingu
 * @returns
 */
 
