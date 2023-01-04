@@ -33,3 +33,15 @@ export function executeWork(employee: DirectorInterface | TeacherInterface): str
   (isDirector(employee)) ? res = employee.workDirectorTasks() : res = employee.workTeacherTasks();
   return res;
 }
+
+export function teachClass(todayClass: Subjects): string {
+  if (todayClass === "Math") {
+    return "Teaching Math";
+  } else if (todayClass === "History") {
+    return "Teaching History";
+  }
+}
+type Subjects = "Math" | "History";
+
+console.log(teachClass("Math"));
+console.log(teachClass("History"));
