@@ -37,3 +37,11 @@ class StudentClass implements classInterface {
     return this.firstName;
   }
 }
+
+interface StudentConstructor {
+  (firstName: string, lastName: string): classInterface;
+}
+
+const student = new StudentClass("Omondi", "Obiro");
+console.log(student.displayName())
+console.log(student.workOnHomework())
