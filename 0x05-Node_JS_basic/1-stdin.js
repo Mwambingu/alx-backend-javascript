@@ -1,15 +1,15 @@
 #!/usr/bin/env node
 /* eslint-disable */
+process.stdout.write("Welcome to Holberton School, what is your name?\n");
 
-const readline = require("readline");
+process.stdin.on("readable", () => {
+    const chunk = process.stdin.read();
 
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout,
+    if (chunk) {
+        process.stdout.write(`Your name is: ${chunk}`);
+    }
 });
 
-console.log("Welcome to Holberton School, what is your name?");
-rl.question("Your name is: ", (name) => {
-    console.log(`This important software is now closing`);
-    rl.close();
+process.stdin.on("end", () => {
+    process.stdout.write("This important software is now closing\n");
 });
